@@ -35,8 +35,8 @@ export const createImage = async (req, res) => {
 
   const image = {
     image: {
-      original: `http://192.168.0.108:5000/api/uploads/${imageName}`,
-      thumbnail: `http://192.168.0.108:5000/api/uploads/thumb_${imageName}`
+      original: `https://apiimages-production-e04b.up.railway.app/api/uploads/${imageName}`,
+      thumbnail: `https://apiimages-production-e04b.up.railway.app/api/uploads/thumb_${imageName}`
     },
     key: imageName,
     tags: req.body.tags.split(',').map(tag => tag.trim()),
